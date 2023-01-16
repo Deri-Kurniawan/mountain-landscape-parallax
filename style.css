@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Bakbak One", cursive;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  background-clip: border-box;
+  background-color: #c2dfed;
+  overflow: hidden;
+}
+
+#bg,
+#g1,
+#g2,
+#g3,
+#g4,
+#g5,
+#g6,
+#g7,
+#aw1,
+#aw2,
+#sun,
+#b1,
+#b2,
+#b3 {
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#sun {
+  z-index: 0;
+}
+
+#b1 {
+  z-index: 5;
+}
+
+#b2,
+#b3 {
+  z-index: 100;
+}
+
+#aw1,
+#aw2 {
+  z-index: 1;
+}
+
+#g1 {
+  z-index: 8;
+}
+
+#g2 {
+  z-index: 7;
+}
+
+#g3 {
+  z-index: 6;
+}
+
+#g4 {
+  z-index: 5;
+}
+
+#g5 {
+  z-index: 4;
+}
+
+#g6 {
+  z-index: 3;
+}
+
+#g7 {
+  z-index: 2;
+}
+
+#button {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 4;
+  font-size: 6vw;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#main {
+  position: absolute;
+  background: linear-gradient(to bottom, #224d4d, #224d4d 1%, #eee 2%);
+  padding: 2vw 10vw;
+  z-index: 100;
+}
+
+#main h1,
+#main h2 {
+  font-size: 5vw;
+}
+
+#main p.p-content,
+#main p {
+  font-size: 2.5vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#main p.p-content {
+  text-indent: 8vw;
+}
+
+#main p {
+  text-indent: 0;
+}
+
+@media screen and (min-width: 320px) {
+  #container {
+    height: 213px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #container {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #container {
+    height: 283px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    height: 512px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container {
+    height: 140vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #container {
+    height: 960px;
+  }
+}
