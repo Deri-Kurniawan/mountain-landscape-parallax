@@ -115,6 +115,29 @@ window.addEventListener("scroll", () => {
   }
 });
 
+window.addEventListener("mousemove", (event) => {
+  const x = (multiply = 2, divider = 90) =>
+    (window.innerWidth - event.pageX * multiply) / divider;
+  const y = (multiply = 2, divider = 90) =>
+    (window.innerWidth - event.pageY * multiply) / divider;
+  const transform = (x, y) =>
+    `translateX(${x}px) translateY(${y}px) scale(1.05)`;
+
+  g2.style.transform = transform(x(2), y(2));
+  g3.style.transform = transform(x(-2), y(-2));
+  g4.style.transform = transform(x(2), y(2));
+  g5.style.transform = transform(x(-2), y(-2));
+  g6.style.transform = transform(x(2), y(2));
+  g7.style.transform = transform(x(-2), y(-2));
+  aw1.style.transform = transform(x(2), y(2));
+  aw2.style.transform = transform(x(2), y(-2));
+  b1.style.transform = transform(x(2), y(2));
+  b2.style.transform = transform(x(-2), y(-2));
+  b3.style.transform = transform(x(-2), y(-2));
+  sun.style.transform = transform(x(-2), y(-2));
+  button.style.transform = transform(x(0), y(4));
+});
+
 container.appendChild(button);
 app.appendChild(container);
 app.appendChild(main);
