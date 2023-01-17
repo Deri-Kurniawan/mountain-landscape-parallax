@@ -1,5 +1,5 @@
 import "./style.css";
-import Deact, { createElement } from "./Deact";
+import Deact, { createElement } from "./deact";
 import parallax from "./parallax";
 
 parallax.init();
