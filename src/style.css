@@ -13,7 +13,7 @@ body {
   display: none;
 }
 
-#container {
+#landscapeVectorContainer {
   position: relative;
   width: 100vw;
   background-clip: border-box;
@@ -130,37 +130,37 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  #container {
+  #landscapeVectorContainer {
     height: 213px;
   }
 }
 
 @media screen and (min-width: 375px) {
-  #container {
+  #landscapeVectorContainer {
     height: 250px;
   }
 }
 
 @media screen and (min-width: 425px) {
-  #container {
+  #landscapeVectorContainer {
     height: 283px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #container {
+  #landscapeVectorContainer {
     height: 512px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #container {
+  #landscapeVectorContainer {
     height: 140vh;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  #container {
+  #landscapeVectorContainer {
     height: 960px;
   }
 }
