@@ -20,7 +20,7 @@ export default class Parallax {
       g4.style.transform = transform(x(2), y(2));
       g5.style.transform = transform(x(-2), y(-2));
       g6.style.transform = transform(x(2), y(2));
-      g7.style.transform = transform(x(-2), y(-2));
+      g7.style.transform = transform(x(-1), y(-1));
       aw1.style.transform = transform(x(2), y(2));
       aw2.style.transform = transform(x(2), y(-2));
       b1.style.transform = transform(x(2), y(2));
